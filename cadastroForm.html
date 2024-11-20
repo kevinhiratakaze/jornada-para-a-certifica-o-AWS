@@ -19,7 +19,27 @@
             </nav>
         </header>
         <main>
-            /* Insira seu código aqui */
+            <h2>Cadastro</h2>
+            <form action="/cadastrar" method="POST">
+                <label for="username">Nome de usuário</label><br>
+                <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário"><br><br>
+                
+                <label for="email">Endereço de e-mail</label><br>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br><br>
+                
+                <label for="password">Senha</label><br>
+                <input type="password" id="password" name="password" required placeholder="Digite sua senha"><br><br>
+                
+                <label for="confirm-password">Confirmar Senha</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua senha"><br><br>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            
+            <div class="login-link">
+                <a href="/login">Já tem uma conta? Entrar</a>
+            </div>
+            
         </main>
         <footer>
             <section>
