@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <header>
+            <span>Jornada AWS - Cadastro</span>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="simulado.html">Quiz/Simulado</a></li>
+                    <li><a href="jornada.html">Jornada</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Cadastro</h2>
+            <form action="/cadastrar" method="POST">
+                <label for="username">Nome de usuário</label><br>
+                <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário"><br><br>
+                
+                <label for="email">Endereço de e-mail</label><br>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br><br>
+                
+                <label for="password">Senha</label><br>
+                <input type="password" id="password" name="password" required placeholder="Digite sua senha"><br><br>
+                
+                <label for="confirm-password">Confirmar Senha</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua senha"><br><br>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            
+            <div class="login-link">
+                <a href="/login">Já tem uma conta? Entrar</a>
+            </div>
+            
+        </main>
+        <footer>
+            <section>
+                <h4>Sobre</h4>
+                <ul>
+                    <li>Termos de uso</li>
+                    <li>Politica de Privacidade</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Recursos</h4>
+                <li>Ajuda</li>
+            </section>
+            <section>
+                <h4>Redes Sociais</h4>
+                <img src="img/InstagramLogo.png" alt="Link Instagram" width="40px">
+                <img src="img/facebookLogo.png" alt="Link Facebook" width="40px">
+                <img src="img/youtubeLogo.png" alt="Link YouTube" width="40px">
+            </section>
+        </footer>
+    </body>
+</html>
