@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-light: #cdc7c0; 
+    --bg-dark: #232b3b; 
+    --text-light: #cdc7c0; 
+    --text-hover: #47a1c8; 
+    --button-gold: #e7a650;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    line-height: 1.6; 
+}
+
+/* Estilização header */
+header {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 6rem;     
+}
+
+header img {
+    width: 10rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;   
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--text-hover)
+}
+
+/* Estilização Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li:hover {
+    color: var(--text-hover)
+}
+
+footer img {
+    display: flex-direction;
+    flex-direction: row;
+    gap: 1rem;
+    width: 2rem;
+}
+
+
