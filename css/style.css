@@ -17,7 +17,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-light);
-    line-height: 1.6; 
+    line-height: 1.6;
+    margin: 0;
+
 }
 
 /* Estilização header */
@@ -29,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    height: 6rem;     
+    height: 6rem;
 }
 
 header img {
@@ -59,7 +61,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem 3rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -79,4 +81,138 @@ footer img {
     width: 2rem;
 }
 
+/* Parte para a página Jornada*/
+details {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
 
+summary {
+    cursor: pointer;
+    list-style: none; 
+}
+  
+summary::before {
+    content: "▶";
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+  
+details[open] summary::before {
+    content: "▼";
+}
+
+details p {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Parte para a página Simulado*/
+.question {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+  
+.question h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+  
+.answers label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+  
+.answers input[type="radio"] {
+    margin-right: 8px;
+}
+  
+.menu-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+  
+.menu-flutuante button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+  
+.menu-flutuante button:hover {
+    background-color: #0056b3;
+}
+  
+.menu-flutuante button:active {
+    background-color: #004080;
+}
+
+#tituloRank { 
+    text-align: center;
+    font-size: 36px;
+    color: rgb(207, 154, 18);
+}
+
+.form-container {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.form-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+  
+.form-container button:hover {
+    background-color: #218838;
+}
+  
+.form-container button:active {
+    background-color: #1e7e34;
+}
