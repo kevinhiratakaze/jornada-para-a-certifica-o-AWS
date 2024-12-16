@@ -198,20 +198,17 @@ main {
 
 /* Parte para a página Simulado*/
 
-
 .titulo-simulado {
     text-align: center;
     font-size: 36px;
-    color: rgb(207, 154, 18);
+    color: #232b3b;
 }
 .menu-lateral {
     padding: 20px;
-    border-radius: 5px;
-    width: 20%;   
-    position: fixed;
-    
-   
+    border-radius: 5px;      
+    position: fixed;    
 }
+
 .menu-lateral h3 {
     font-size: 24px;
     text-align: center;
@@ -271,15 +268,31 @@ main {
 .answers input[type="radio"] {
     margin-right: 8px;
 }
-  
-.menu-flutuante {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+
+.navigation {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px;   
 }
-  
-.menu-flutuante button {
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color:  var(--button-gold);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--blue-hover)
+}
+    
+.btn-enviar {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
@@ -291,11 +304,11 @@ main {
     transition: background-color 0.3s ease;
 }
   
-.menu-flutuante button:hover {
+.btn-enviar:hover {
     background-color: #0056b3;
 }
   
-.menu-flutuante button:active {
+.btn-enviar:active {
     background-color: #004080;
 }
 
@@ -345,4 +358,42 @@ main {
   
 .form-container button:active {
     background-color: #1e7e34;
+}
+
+/* Estilo geral para a tabela */
+#rankingTable {
+    width: 40%; 
+    border-collapse: collapse; 
+    margin: 20px auto; 
+    font-size: 1rem;   
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+#rankingTable thead {
+    background-color: var(--bg-dark);
+    color: #cdc7c0;  
+}   
+
+#rankingTable thead th {
+    padding: 10px 15px;
+}
+
+#rankingTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+#rankingTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#rankingTable tbody td {
+    padding: 10px 15px;
+}
+
+#rankingTable tbody td:nth-child(3) { 
+    color: #28a745;
 }
