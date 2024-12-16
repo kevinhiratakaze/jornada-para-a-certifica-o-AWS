@@ -9,9 +9,8 @@
 :root {
     --bg-light: #cdc7c0; 
     --bg-dark: #232b3b; 
-    --text-light: #cdc7c0; 
-    --text-hover: #47a1c8; 
-    --button-gold: #e7a650;
+    --blue-hover: #47a1c8; 
+    --button-gold: #e87416;
 }
 
 body {
@@ -25,7 +24,7 @@ body {
 /* Estilização header */
 header {
     background-color: var(--bg-dark);
-    color: var(--text-light);
+    color: #cdc7c0; 
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -46,18 +45,18 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-light);
+    color: #cdc7c0; 
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--text-hover)
+    color: var(--blue-hover);
 }
 
 /* Estilização Footer */
 footer {
     background-color: var(--bg-dark);
-    color: var(--text-light);
+    color:#cdc7c0; 
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem 3rem;
@@ -71,7 +70,7 @@ footer li {
 }
 
 footer li:hover {
-    color: var(--text-hover)
+    color: var(--blue-hover);
 }
 
 footer img {
@@ -79,6 +78,89 @@ footer img {
     flex-direction: row;
     gap: 1rem;
     width: 2rem;
+}
+
+/* Estilização do formulário de cadastro */
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color:  #232b3b;   
+}
+
+.cadastro h1 {
+    font-size: 2rem; 
+}
+
+.cadastro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.cadastro span {
+    color: rgb(207, 154, 18);
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.form-cadastro {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-cadastro label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-cadastro input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-cadastro button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--button-gold);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-cadastro button:hover {
+    background-color: var(--blue-hover);  
+}
+
+.login-link {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: #218838;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    color: var(--blue-hover);  
 }
 
 /* Parte para a página Jornada*/

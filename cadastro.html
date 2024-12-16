@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <title>Home</title>
+        <title>Cadastro</title>
     </head>
     <body>
         <header>
@@ -19,9 +19,11 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h2>Cadastro</h2>
-            <form action="/cadastrar" method="POST">
+        <main class="cadastro">
+            <h1>Junte-se a <span>JORNADA AWS</span></h1>
+            <h2>Crie a sua conta</h2>
+
+            <form class="form-cadastro" action="/cadastrar" method="POST">
                 <label for="username">Nome de usuário</label><br>
                 <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário"><br><br>
                 
@@ -38,7 +40,7 @@
             </form>
             
             <div class="login-link">
-                <a href="/login">Já tem uma conta? Entrar</a>
+                <p>Já tem uma conta? <a href="./login.html">Entrar</a></p>
             </div>
             
         </main>
