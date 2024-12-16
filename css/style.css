@@ -197,6 +197,54 @@ main {
 }
 
 /* Parte para a página Simulado*/
+
+
+.titulo-simulado {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(207, 154, 18);
+}
+.menu-lateral {
+    padding: 20px;
+    border-radius: 5px;
+    width: 20%;   
+    position: fixed;
+    
+   
+}
+.menu-lateral h3 {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(207, 154, 18);
+}
+
+.menu-navegacao {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;      
+}
+
+.menu-navegacao a {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;    
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    height: 50px;
+    text-align: center;
+}
+
+.menu-navegacao a:hover {
+    background-color: var(--text-hover);
+}
+
 .question {
     margin: 20px auto;
     padding: 15px;
