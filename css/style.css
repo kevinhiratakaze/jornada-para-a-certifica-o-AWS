@@ -397,3 +397,67 @@ main {
 #rankingTable tbody td:nth-child(3) { 
     color: #28a745;
 }
+
+/* alteraçoes do login Everaldo */
+.login-entrada {
+    background-color: #232b3b;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.login-entrada:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login-entrada h2 {
+    text-align: center;
+    color: white;
+}
+
+.login-entrada .input,
+.login-entrada .entrada {
+    margin-bottom: 15px;
+}
+
+.login-entrada .input label,
+.login-entrada .entrada label {
+    display: block;
+    margin-bottom: 5px;
+    color:#e7a650;
+}
+
+.login-entrada .input input,
+.login-entrada .entrada input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.login-entrada .input input:focus,
+.login-entrada .entrada input:focus {
+    border-color: #e7a650;
+    outline: none;
+}
+
+.login-entrada button {
+    width: 100%;
+    padding: 10px;
+    background-color:#e87416;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-entrada button:hover {
+    background-color: #e7a650;
+}
