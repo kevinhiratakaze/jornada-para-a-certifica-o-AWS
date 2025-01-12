@@ -96,22 +96,51 @@
             </section>
 
             <!-- Ranking -->
-            <section>
+            <section id="rankingHome">
             <div class="ranking">
                 <h2>Top 5</h2>
-                <ul>
-                    <li>1º Usuário A - 1500 pontos</li>
-                    <li>2º Usuário B - 1450 pontos</li>
-                    <li>3º Usuário C - 1420 pontos</li>
-                    <li>4º Usuário D - 1400 pontos</li>
-                    <li>5º Usuário E - 1380 pontos</li>
-                </ul>
+                <!-- Tabela para mostrar o ranking -->
+                <table id="rankingTable">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Nome</th>
+                            <th>Pontuação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados aleatorios para visualização do style -->
+                        <tr>
+                            <td>1</td>
+                            <td>Ana Silva</td>
+                            <td>950</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>João Costa</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mariana Santos</td>
+                            <td>890</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Pedro Oliveira</td>
+                            <td>870</td>
+                        </tr>
+                        <!-- Os dados do ranking serão adicionados aqui dinamicamente -->
+                    </tbody>
+                </table>
                 <p>Veja o ranking completo após o login!</p>
             </div>
             <div>
                 <h2>Desafie-se com a Jornada AWS</h2>
                 <p>Desenvolva suas habilidades e prepare-se para a certificação.</p>
-                <button>Cadastre-se Agora</button>
+                <div class="btn-group">
+                    <a href="cadastro.html">Cadastre-se Agora</a>
+                </div>
 
             </div>
             </section>

@@ -584,3 +584,19 @@ main {
 .login-entrada button:hover {
     background-color: #e7a650;
 }
+
+
+/* Parte para o Ranking do Home*/
+
+#rankingHome{
+    text-align: center;
+}
+
+#rankingHome h2{
+    margin-top: 2rem;
+}
+
+#rankingHome p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
