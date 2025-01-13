@@ -585,6 +585,21 @@ main {
     background-color: #e7a650;
 }
 
+.cadastro-link {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cadastro-link a {
+    color: #218838;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cadastro-link a:hover {
+    color: var(--blue-hover);  
+}
 
 /* Parte para o Ranking do Home*/
 
