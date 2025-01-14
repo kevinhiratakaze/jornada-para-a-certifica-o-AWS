@@ -244,8 +244,7 @@ footer img {
 
 .form-cadastro input {
     width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 0.5rem;
+    padding: 0.8rem;    
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -282,6 +281,27 @@ footer img {
 .login-link a:hover {
     color: var(--blue-hover);  
 }
+
+/* Estilo para confirmação do formulario cadastro*/  
+input.error { 
+    border: 2px solid darkred;
+    background-color: rgb(248, 179, 179);
+  }
+  
+  input.correct {
+    border: 2px solid green;
+    background-color: rgb(179, 248, 179);
+  }
+
+  .helper-text {
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 0.5rem;
+  }
+
+  .correct + .helper-text {
+    color: green;
+} 
 
 /* Parte para a página Jornada*/
 .main-jornada {
