@@ -91,6 +91,24 @@ cadastrarButton.addEventListener("click", (e) => {
 
   if (isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
     alert("Cadastro realizado com sucesso!");
+    
+    // Limpar os campos após o cadastro
+    usernameInput.value = "";
+    emailInput.value = "";
+    senhaInput.value = "";
+    confirmarSenhaInput.value = "";
+
+    // Limpar as mensagens de ajuda
+    usernameHelper.innerText = "";
+    emailHelper.innerText = "";
+    passwordHelper.innerText = "";
+    confirmPasswordHelper.innerText = "";
+    
+    // Remover estilos de sucesso/erro
+    usernameInput.classList.remove("correct");
+    emailInput.classList.remove("correct");
+    senhaInput.classList.remove("correct");
+    confirmarSenhaInput.classList.remove("correct");
   } else {
     alert("Por favor, preencha os campos corretamente.");
   }
