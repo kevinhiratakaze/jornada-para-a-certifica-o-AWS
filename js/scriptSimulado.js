@@ -1,5 +1,5 @@
-// As questões a serem utilizadas, definir todas as respostas com B
 document.addEventListener("DOMContentLoaded", function () {
+    // As questões a serem utilizadas, definir todas as respostas com B
     const perguntas = [
         { pergunta: "O que é a AWS?", respostas: { a: "Um serviço de armazenamento na nuvem", b: "Uma plataforma de computação em nuvem", c: "Um sistema operacional", d: "Nenhuma das anteriores" }, correta: "b" },
         { pergunta: "Qual é o serviço usado para armazenamento de objetos na AWS?", respostas: { a: "Amazon EC2", b: "Amazon S3", c: "Amazon RDS", d: "Amazon Lambda" }, correta: "b" },
