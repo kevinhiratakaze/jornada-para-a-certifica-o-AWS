@@ -1,4 +1,4 @@
-// Evento com as questões a serem utilizadas, definir todas as respostas com B
+// As questões a serem utilizadas, definir todas as respostas com B
 document.addEventListener("DOMContentLoaded", function () {
     const perguntas = [
         { pergunta: "O que é a AWS?", respostas: { a: "Um serviço de armazenamento na nuvem", b: "Uma plataforma de computação em nuvem", c: "Um sistema operacional", d: "Nenhuma das anteriores" }, correta: "b" },
